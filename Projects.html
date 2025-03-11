@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="portfolio-container">
-      <header class="site-header">
+    <header class="site-header">
         <h1 class="site-title">Your Name</h1>
+        <button class="mobile-menu-button" onclick="toggleMenu()">☰</button>
         <nav class="main-navigation">
-          <a href="#" class="nav-link">Blog</a>
-          <a href="#" class="nav-link">Projects</a>
-          <a href="#" class="nav-link">About</a>
-          <a href="#" class="nav-link">Newsletter</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Projects</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Newsletter</a>
+            </div>
         <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
         <label for="theme-toggle" class="theme-toggle">
             <span class="toggle-knob"></span>
@@ -32,7 +34,7 @@
           
             <input type="radio" id="large" name="font-size" class="font-size-toggle" hidden>
             <label for="large" class="font-button">A+</label>
-          </div>    
+          </div>          
         </nav>
       </header>
 
@@ -186,5 +188,10 @@
         </div>
       </footer>
     </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".main-navigation").classList.toggle("show-menu");
+        }
+    </script>   
   </body>
 </html>
