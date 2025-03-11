@@ -106,10 +106,11 @@
     padding: 48px 32px;
   }
   
-  .profile-name, .page-title {
+  .profile-name{
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 48px;
+    text-align: center;
   }
   
   .section-title {
@@ -118,12 +119,21 @@
     font-weight: normal;
   }
   
-  .section-text, .project-description {
+  .project-description, .about-me {
     font-size: 16px;
     color: #9ca3af;
     line-height: 24px;
     margin: 16px 0;
   }
+
+  .section-text {
+    font-size: 16px;
+    color: #9ca3af;
+    line-height: 24px;
+    margin: 16px 0;
+    margin-left: 20px;
+  }
+
   
   /* Projects grid */
   .projects-grid {
@@ -140,6 +150,12 @@
   
   .project-card-large {
     grid-column: span 2 / span 2;
+  }
+
+  .profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
   }
   
   .project-image {
@@ -215,3 +231,236 @@
   .footer-link:hover {
     text-decoration: underline;
   }
+
+  /* Estilos del botón deslizante */
+.theme-toggle {
+    width: 50px;
+    height: 25px;
+    background-color: #1f2937; /* Oscuro por defecto */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-knob {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Cambiar el color del fondo y del texto al activar el interruptor */
+  body:has(.theme-toggle-checkbox:checked) {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Cambia el color del botón cuando está activado */
+  .theme-toggle-checkbox:checked + .theme-toggle {
+    background-color: #e0e0e0;
+  }
+  
+  /* Mueve la perilla a la derecha cuando el checkbox está activado */
+  .theme-toggle-checkbox:checked + .theme-toggle .toggle-knob {
+    transform: translateX(25px);
+    background-color: #000000;
+  }
+  
+  /* Cambiar color de los enlaces en modo claro */
+  body:has(.theme-toggle-checkbox:checked) .nav-link {
+    color: #000000;
+  }
+
+  body:has(.theme-toggle-checkbox:checked) .project-card {
+    background-color: #e0e0e0;
+  }
+  
+  body:has(.theme-toggle-checkbox:checked) .project-description {
+    color: #222121;
+  }
+  
+  body:has(.theme-toggle-checkbox:checked) .about-me {
+    color: #222121;
+  }
+
+  body:has(.theme-toggle-checkbox:checked) .section-text {
+    color: #222121;
+  }
+  
+  body:has(.theme-toggle-checkbox:checked) .site-footer{
+        color: #222121;
+  }
+
+  body:has(.theme-toggle-checkbox:checked) .tag{
+    color: #222121;
+    background-color: #9e9c9c;
+}
+  
+  body:has(.theme-toggle-checkbox:checked) .footer-link{
+        color: #222121;
+  }
+
+  /* Contenedor de los botones de tamaño de letra */
+.font-size-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  /* Estilos de los botones */
+  .font-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+    color: #ffffff;
+  }
+  
+  /* Cambiar color en modo claro */
+  body:has(.theme-toggle-checkbox:checked) .font-button {
+    border: 1px solid #000000;
+    color: #000000;
+  }
+  
+  /* Efecto al seleccionar un botón */
+  .font-size-toggle:checked + .font-button {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  /* Tamaños de letra según el botón seleccionado */
+  body:has(#small:checked) .nav-link{
+    font-size: 12px;
+  }
+  
+  body:has(#normal:checked) {
+    font-size: 16px;
+  }
+  
+  body:has(#large:checked) {
+    font-size: 22px;
+  }
+
+  body:has(#small:checked) .site-title{
+    font-size: 16px;
+  }
+
+  body:has(#normal:checked) .site-title{
+    font-size: 20px;
+  }
+
+  body:has(#large:checked) .site-title{
+    font-size: 24px;
+  }
+
+  body:has(#small:checked) .profile-name{
+    font-size: 32px;
+  }
+
+  body:has(#normal:checked) .profile-name{
+    font-size: 64px;
+  }
+
+  body:has(#large:checked) .profile-name{
+    font-size: 128px;
+  }
+
+  body:has(#small:checked) .section-title{
+    font-size: 16px;
+  }
+
+  body:has(#normal:checked) .section-title{
+    font-size: 20px;
+  }
+
+  body:has(#large:checked) .section-title{
+    font-size: 24px;
+  }
+
+  body:has(#small:checked) .about-me{
+    font-size: 12px;
+  }
+
+  body:has(#normal:checked) .about-me{
+    font-size: 16px;
+  }
+
+  body:has(#large:checked) .about-me{
+    font-size: 20px;
+  }
+
+  body:has(#small:checked) .section-text{
+    font-size: 12px;
+  }
+
+  body:has(#normal:checked) .section-text{
+    font-size: 16px;
+  }
+
+  body:has(#large:checked) .section-text{
+    font-size: 20px;
+  }
+
+  body:has(#small:checked) .footer-links{
+    font-size: 12px;
+  }
+
+  body:has(#normal:checked) .footer-links{
+    font-size: 14px;
+  }
+
+  body:has(#large:checked) .footer-links{
+    font-size: 16px;
+  }
+
+  body:has(#small:checked) .project-description{
+    font-size: 12px;
+  }
+
+  body:has(#normal:checked) .project-description{
+    font-size: 16px;
+  }
+
+  body:has(#large:checked) .project-description{
+    font-size: 20px;
+  }
+
+  body:has(#small:checked) .project-title{
+    font-size: 16px;
+  }
+
+  body:has(#normal:checked) .project-title{
+    font-size: 20px;
+  }
+
+  body:has(#large:checked) .project-title{
+    font-size: 24px;
+  }
+
+  body:has(#small:checked) .tag{
+    font-size: 10px;
+  }
+
+  body:has(#normal:checked) .tag{
+    font-size: 14px;
+  }
+
+  body:has(#large:checked) .tag{
+    font-size: 18px;
+  }
+
+
+
+

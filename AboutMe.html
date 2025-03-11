@@ -11,23 +11,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-container">
-      <header class="site-header">
+    <header class="site-header">
         <h1 class="site-title">Your Name</h1>
         <nav class="main-navigation">
           <a href="#" class="nav-link">Blog</a>
           <a href="#" class="nav-link">Projects</a>
           <a href="#" class="nav-link">About</a>
           <a href="#" class="nav-link">Newsletter</a>
-          <div class="theme-toggle-wrapper">
-            <button class="theme-toggle">
-              <span class="toggle-knob"></span>
-            </button>
-          </div>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
+        <label for="theme-toggle" class="theme-toggle">
+            <span class="toggle-knob"></span>
+        </label>
+        <div class="font-size-controls">
+            <input type="radio" id="small" name="font-size" class="font-size-toggle" hidden>
+            <label for="small" class="font-button">A-</label>
+          
+            <input type="radio" id="normal" name="font-size" class="font-size-toggle" hidden checked>
+            <label for="normal" class="font-button">A</label>
+          
+            <input type="radio" id="large" name="font-size" class="font-size-toggle" hidden>
+            <label for="large" class="font-button">A+</label>
+          </div>          
         </nav>
-        <button class="mobile-menu-button">
-          <i class="ti ti-menu-2"></i>
-        </button>
       </header>
 
       <main class="main-content">
@@ -40,10 +45,12 @@
             class="profile-image"
           />
         </section>
+        <br>
+        <br>
 
         <section class="about-section">
           <h2 class="section-title">About Me</h2>
-          <p class="section-text">
+          <p class="about-me">
             As a passionate and experienced UI designer, I am dedicated to
             creating intuitive and engaging user experiences that meet the needs
             of my clients and their users. I have a strong understanding of
@@ -124,12 +131,14 @@
         </section>
 
         <footer class="site-footer">
-          <span class="copyright">© 2023</span>
-          <a href="#" class="footer-link">Twitter</a>
-          <a href="#" class="footer-link">LinkedIn</a>
-          <a href="#" class="footer-link">Email</a>
-          <a href="#" class="footer-link">RSS feed</a>
-          <a href="#" class="footer-link">Add to Feedly</a>
+            <div class="footer-links">
+              <span class="copyright">© 2023</span>
+              <a href="#" class="footer-link">Twitter</a>
+              <a href="#" class="footer-link">LinkedIn</a>
+              <a href="#" class="footer-link">Email</a>
+              <a href="#" class="footer-link">RSS feed</a>
+              <a href="#" class="footer-link">Add to Feedly</a>
+            </div>
         </footer>
       </main>
     </div>

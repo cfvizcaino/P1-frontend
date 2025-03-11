@@ -19,19 +19,25 @@
           <a href="#" class="nav-link">Projects</a>
           <a href="#" class="nav-link">About</a>
           <a href="#" class="nav-link">Newsletter</a>
-          <div class="theme-toggle-wrapper">
-            <button class="theme-toggle">
-              <span class="toggle-knob"></span>
-            </button>
-          </div>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
+        <label for="theme-toggle" class="theme-toggle">
+            <span class="toggle-knob"></span>
+        </label>
+        <div class="font-size-controls">
+            <input type="radio" id="small" name="font-size" class="font-size-toggle" hidden>
+            <label for="small" class="font-button">A-</label>
+          
+            <input type="radio" id="normal" name="font-size" class="font-size-toggle" hidden checked>
+            <label for="normal" class="font-button">A</label>
+          
+            <input type="radio" id="large" name="font-size" class="font-size-toggle" hidden>
+            <label for="large" class="font-button">A+</label>
+          </div>    
         </nav>
-        <button class="mobile-menu-button">
-          <i class="ti ti-menu-2"></i>
-        </button>
       </header>
 
       <main class="main-content">
-        <h1 class="page-title">PROJECTS</h1>
+        <h1 class="profile-name">PROJECTS</h1>
         <h2 class="section-title">List Project</h2>
 
         <section class="projects-grid">
