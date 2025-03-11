@@ -339,6 +339,11 @@
     background: #ffffff;
     color: #000000;
   }
+
+  body:has(.theme-toggle-checkbox:checked) .font-size-toggle:checked + .font-button {
+    background: #000000;
+    color: #ffffff;
+  }
   
   /* Tamaños de letra según el botón seleccionado */
   body:has(#small:checked) .nav-link{
