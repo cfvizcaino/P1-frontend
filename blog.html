@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+        <h1 class="site-title">Space Explorer Blog</h1>
+        <button class="mobile-menu-button" onclick="toggleMenu()">☰</button>
+        <nav class="main-navigation">
+            <div class="nav-links">
+                <a href="#" class="nav-link">Blog</a>
+                <a href="Projects.html" class="nav-link">Projects</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Newsletter</a>
+            </div>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
+        <label for="theme-toggle" class="theme-toggle">
+            <span class="toggle-knob"></span>
+        </label>
+        <div class="font-size-controls">
+            <input type="radio" id="small" name="font-size" class="font-size-toggle" hidden>
+            <label for="small" class="font-button">A-</label>
+          
+            <input type="radio" id="normal" name="font-size" class="font-size-toggle" hidden checked>
+            <label for="normal" class="font-button">A</label>
+          
+            <input type="radio" id="large" name="font-size" class="font-size-toggle" hidden>
+            <label for="large" class="font-button">A+</label>
+          </div>          
+        </nav>
+      </header>
+      <main class="main-content">
+        <h1 class="theBlog">SPACE CHRONICLES</h1>
+        <h2 class="section-title">Latest Space Discoveries & Missions</h2>
+
+        <section class="projects-grid">
+          <a href="detailBlog.html" class="project-card">
+            <article>
+              <img
+                src="img/spacex.jpg"
+                alt="Starship Launch"
+                class="project-image"
+              />
+              <div class="project-content">
+                <header class="project-header">
+                  <p class="dateBlog">Thursday, 14 Mar 2024</p>
+                  <h3 class="project-title">
+                    SpaceX's Starship: Third Test Flight Success
+                  </h3>
+                  <i class="ti ti-arrow-up-right"></i>
+                </header>
+                <p class="project-description">
+                  Analysis of SpaceX's latest Starship test flight, marking significant progress in their Mars mission program.
+                </p>
+                <div class="project-tags">
+                  <span class="tags1">SpaceX</span>
+                  <span class="tags2">Starship</span>
+                  <span class="tags3">Mars Mission</span>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="posts/crew-dragon.html" class="project-card">
+            <article>
+              <img
+                src="img/dragon.jpg"
+                alt="Crew Dragon"
+                class="project-image"
+              />
+              <div class="project-content">
+                <header class="project-header">
+                  <p class="dateBlog">Monday, 11 Mar 2024</p>
+                  <h3 class="project-title">
+                    Crew Dragon: Revolutionizing Human Spaceflight
+                  </h3>
+                  <i class="ti ti-arrow-up-right"></i>
+                </header>
+                <p class="project-description">
+                  How SpaceX's Crew Dragon has transformed space travel and NASA's commercial crew program, making space more accessible than ever.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">NASA</span>
+                  <span class="tag">SpaceX</span>
+                  <span class="tag">Space Travel</span>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <article class="project-card project-card-large">
+            <img
+              src="https://placehold.co/1600x400/3a3f4d/3a3f4d"
+              alt="Starlink"
+              class="project-image project-image-large"
+            />
+            <div class="project-content">
+              <header class="project-header">
+                <h3 class="project-title">
+                  Starlink: Global Internet Coverage Reaches New Milestone
+                </h3>
+                <i class="ti ti-arrow-up-right"></i>
+              </header>
+              <p class="project-description">
+                Exploring how SpaceX's Starlink constellation is revolutionizing global internet connectivity, with recent launches expanding coverage to remote areas.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Starlink</span>
+                <span class="tag">Satellite</span>
+                <span class="tag">Technology</span>
+                <span class="tag">Innovation</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://placehold.co/800x400/4a4f5d/4a4f5d"
+              alt="Mars Colony"
+              class="project-image"
+            />
+            <div class="project-content">
+              <header class="project-header">
+                <h3 class="project-title">Mars Colony Plans: Latest Updates</h3>
+                <i class="ti ti-arrow-up-right"></i>
+              </header>
+              <p class="project-description">
+                Detailed analysis of SpaceX's latest Mars colonization strategy and timeline, including new technological developments.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Mars</span>
+                <span class="tag">Colonization</span>
+                <span class="tag">Future</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://placehold.co/800x400/5a5f6d/5a5f6d"
+              alt="Falcon 9"
+              class="project-image"
+            />
+            <div class="project-content">
+              <header class="project-header">
+                <h3 class="project-title">Falcon 9: 300th Successful Landing</h3>
+                <i class="ti ti-arrow-up-right"></i>
+              </header>
+              <p class="project-description">
+                Celebrating SpaceX's milestone achievement in rocket reusability and its impact on space economics.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Falcon 9</span>
+                <span class="tag">Reusability</span>
+                <span class="tag">Achievement</span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-links">
+          <span class="copyright">© 2024</span>
+          <a href="#" class="footer-link">Twitter</a>
+          <a href="#" class="footer-link">LinkedIn</a>
+          <a href="#" class="footer-link">Email</a>
+          <a href="#" class="footer-link">RSS feed</a>
+          <a href="#" class="footer-link">Add to Feedly</a>
+        </div>
+      </footer>
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".main-navigation").classList.toggle("show-menu");
+        }
+    </script>   
+  </body>
+</html>
