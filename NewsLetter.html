@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Your Name</h1>
+        <button class="mobile-menu-button" onclick="toggleMenu()">☰</button>
+        <nav class="main-navigation">
+            <div class="nav-links">
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Projects</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Newsletter</a>
+            </div>
+            <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
+            <label for="theme-toggle" class="theme-toggle">
+                <span class="toggle-knob"></span>
+            </label>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <!-- Sección Newsletter -->
+        <section class="newsletter-section">
+            <h2 class="newsletter-section-title">Newsletter</h2>
+            <h1 class="newsletter-title">Stay Updated</h1>
+            <p class="newsletter-description">Subscribe to receive the latest blog posts and updates directly to your inbox.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" class="newsletter-input">
+                <button class="newsletter-button">Subscribe</button>
+            </div>
+            <p class="privacy-policy">By subscribing, you agree to our Privacy Policy.</p>
+        </section>
+        
+        <!-- Sección Blog Posts -->
+        <section class="blog-posts-section">
+            <h2 class="section-title">All Blog Posts</h2>
+            <div class="blog-posts-grid">
+                <article class="blog-card">
+                    <img src="https://placehold.co/300x200" alt="Blog image" class="blog-image">
+                    <p class="blog-date">March 10, 2025</p>
+                    <h3 class="blog-title">The Power of UX Design</h3>
+                    <p class="blog-description">How UX design impacts business growth.</p>
+                    <div class="blog-tags">
+                        <span class="tag">UX</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://placehold.co/300x200" alt="Blog image" class="blog-image">
+                    <p class="blog-date">February 28, 2025</p>
+                    <h3 class="blog-title">Accessibility Matters</h3>
+                    <p class="blog-description">Ensuring an inclusive web experience for all users.</p>
+                    <div class="blog-tags">
+                        <span class="tag">A11y</span>
+                        <span class="tag">Web</span>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://placehold.co/300x200" alt="Blog image" class="blog-image">
+                    <p class="blog-date">January 15, 2025</p>
+                    <h3 class="blog-title">Dark Mode Best Practices</h3>
+                    <p class="blog-description">Creating an effective dark mode experience.</p>
+                    <div class="blog-tags">
+                        <span class="tag">UI</span>
+                        <span class="tag">Dark Mode</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-links">
+            <span class="copyright">© 2025</span>
+            <a href="#" class="footer-link">Twitter</a>
+            <a href="#" class="footer-link">LinkedIn</a>
+            <a href="#" class="footer-link">Email</a>
+            <a href="#" class="footer-link">RSS feed</a>
+            <a href="#" class="footer-link">Add to Feedly</a>
+        </div>
+    </footer>
+</body>
+</html>
