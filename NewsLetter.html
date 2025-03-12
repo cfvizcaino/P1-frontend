@@ -13,15 +13,25 @@
         <button class="mobile-menu-button" onclick="toggleMenu()">☰</button>
         <nav class="main-navigation">
             <div class="nav-links">
-                <a href="#" class="nav-link">Blog</a>
-                <a href="#" class="nav-link">Projects</a>
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Newsletter</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="Projects.html" class="nav-link">Projects</a>
+                <a href="AboutMe.html" class="nav-link">About</a>
+                <a href="NewsLetter.html" class="nav-link">Newsletter</a>
             </div>
             <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
             <label for="theme-toggle" class="theme-toggle">
                 <span class="toggle-knob"></span>
             </label>
+            <div class="font-size-controls">
+                <input type="radio" id="small" name="font-size" class="font-size-toggle" hidden>
+                <label for="small" class="font-button">A-</label>
+              
+                <input type="radio" id="normal" name="font-size" class="font-size-toggle" hidden checked>
+                <label for="normal" class="font-button">A</label>
+              
+                <input type="radio" id="large" name="font-size" class="font-size-toggle" hidden>
+                <label for="large" class="font-button">A+</label>
+            </div> 
         </nav>
     </header>
     
@@ -87,4 +97,11 @@
         </div>
     </footer>
 </body>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".main-navigation").classList.toggle("show-menu");
+    }
+</script>
+
 </html>
