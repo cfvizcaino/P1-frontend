@@ -165,9 +165,19 @@ body {
 }
 
 .project-card {
-    background-color: #1f2937;
-    border-radius: 12px;
-    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Asegúrate de que los artículos dentro de los enlaces hereden los estilos */
+.project-card article {
+    height: 100%;
 }
 
 .project-card-large {
