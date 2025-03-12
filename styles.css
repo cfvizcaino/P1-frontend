@@ -118,6 +118,22 @@ body {
     text-align: center;
 }
 
+.theBlog {
+    font-size: 150px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.dateBlog {
+    display: flex;
+    flex-direction: row;
+    color: #6d04ff;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
 .section-title {
     font-size: 20px;
     margin-bottom: 32px;
@@ -183,7 +199,7 @@ body {
     font-weight: 600;
     margin-bottom: 16px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -201,6 +217,30 @@ body {
 .tag {
     padding: 4px 12px;
     background-color: #374151;
+    border-radius: 9999px;
+    font-size: 14px;
+}
+
+.tags1 {
+    padding: 4px 12px;
+    color: crimson;
+    background-color: #7a5757;
+    border-radius: 9999px;
+    font-size: 14px;
+}
+
+.tags2 {
+    padding: 4px 12px;
+    color: rgb(121, 121, 255);
+    background-color: #0d2f67;
+    border-radius: 9999px;
+    font-size: 14px;
+}
+
+.tags3 {
+    padding: 4px 12px;
+    color: rgb(107, 247, 107);
+    background-color: #4b6550;
     border-radius: 9999px;
     font-size: 14px;
 }
